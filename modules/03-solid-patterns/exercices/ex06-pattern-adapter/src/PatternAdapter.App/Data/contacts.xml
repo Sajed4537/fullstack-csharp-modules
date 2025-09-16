@@ -1,0 +1,25 @@
+﻿
+
+<contacts>
+	<contact>
+		<firstName>Emma</firstName>
+		<lastName>Durand</lastName>
+		<email>emma.durand@email.com</email>
+	</contact>
+	<contact>
+		<firstName>Léo</firstName>
+		<lastName>Martin</lastName>
+		<email>leo.martin@email.com</email>
+	</contact>
+	<contact>
+		<firstName>Clara</firstName>
+		<lastName>Bernard</lastName>
+		<email>clara.bernard@email.com</email>
+	</contact>
+	<contact>
+		<firstName>Lucas</firstName>
+		<lastName>Petit</lastName>
+		<email>lucas.petit@email.com</email>
+	</contact>
+</contacts>
+

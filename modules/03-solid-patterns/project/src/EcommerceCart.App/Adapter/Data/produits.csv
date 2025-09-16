@@ -1,0 +1,6 @@
+id,nom,prix,categories,stock
+1,Souris,19,MultimediaEtLoisirs,120
+2,Clavier,50,MultimediaEtLoisirs,80
+3,Ecran,200,MultimediaEtLoisirs,30
+4,Shampooing,7,HygieneEtBeaute,200
+5,Croquettes,25,Animalerie,60

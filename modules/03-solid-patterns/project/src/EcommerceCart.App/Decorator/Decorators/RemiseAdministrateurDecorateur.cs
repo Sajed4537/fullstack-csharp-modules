@@ -10,8 +10,6 @@ namespace EcommerceCart.App.Decorator.Decorators
 {
     internal class RemiseAdministrateurDecorateur : PricingDecorator
     {
-        
-
         public Utilisateurs Utilisateurs { get; set; }
 
         public RemiseAdministrateurDecorateur(IPanierServices panierServices, Utilisateurs utilisateurs) : base(panierServices)

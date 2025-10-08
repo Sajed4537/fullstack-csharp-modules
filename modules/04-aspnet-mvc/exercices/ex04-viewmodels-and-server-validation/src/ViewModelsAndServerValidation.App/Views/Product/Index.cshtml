@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Product>
+
+@if(TempData["message"] != null)
+{
+    <div>
+        <h2>@TempData["message"]</h2>
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Lien</th>
+            <th scope="col">Éditer</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Categorie</td>
+            <td>@item.Prix.ToString("C", new CultureInfo("fr-FR"))</td>
+            <td>
+                <a asp-controller="Product" asp-action="Details" asp-route-id="@item.Id">
+                    Détails
+                </a>
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Éditer</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+    
+</table>
+
+<a asp-controller="Product" asp-action="Create">Créer un produit</a>

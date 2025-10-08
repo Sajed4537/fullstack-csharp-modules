@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Panier>
+
+@if (TempData["message"] != null)
+{
+    <div>
+        <h2>@TempData["message"]</h2>
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Utilisateur (Id)</th>
+            <th scope="col">Détails</th>
+            <th scope="col">Supprimer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.IdUtilisateur</td>
+                <td>
+                    <a asp-controller="Paniers" asp-action="Details" asp-route-id="@item.Id">Détails</a>
+                </td>
+                <td>
+                    <a asp-controller="Paniers" asp-action="Delete" asp-route-id="@item.Id">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+<a asp-controller="Paniers" asp-action="Create">Créer un panier</a>

@@ -1,0 +1,27 @@
+﻿@model Utilisateur
+
+<form asp-controller="Utilisateurs" asp-action="DeleteConfirmation" method="post" asp-route-id="@Model.Id">
+    @Html.AntiForgeryToken()
+    <dl>
+        <dt>Id :</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Nom :</dt>
+        <dd>@Model.Nom</dd>
+
+        <dt>Prénom :</dt>
+        <dd>@Model.Prenom</dd>
+
+        <dt>Email :</dt>
+        <dd>@Model.Email</dd>
+
+        <dt>Type :</dt>
+        <dd>@Model.Type</dd>
+    </dl>
+
+    <button type="submit" class=" btn btn-danger">Supprimer</button>
+</form>
+
+<br/>
+
+<a asp-controller="Utilisateurs" asp-action="Index">Retour à la liste</a>

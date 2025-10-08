@@ -1,0 +1,8 @@
+﻿@model Product
+ <tr>
+    <td scope="row">@Model.Id</td>
+    <td>@Model.Name</td>
+    <td>@Model.Categorie</td>
+    <td>@Model.Prix.ToString("C", new CultureInfo("fr-FR"))</td>
+    <td><a asp-controller="Product" asp-action="Details" asp-route-id="@Model.Id">Détails</a></td>
+ </tr>

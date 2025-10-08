@@ -1,0 +1,66 @@
+﻿@model PanierDetailsVm
+
+<dl>
+    <dt>Id :</dt>
+    <dd>@Model.PanierId</dd>
+
+    <dt>Nom d'utilisateur :</dt>
+    <dd>@Model.NomUtilisateur</dd>
+
+    <dt>Total sans frais :</dt>
+    <dd>@Model.SubTotal.ToString("C", new CultureInfo("fr-FR"))</dd>
+
+    <dt>frais de livraison :</dt>
+    <dd>@Model.FraisLivraison.ToString("C", new CultureInfo("fr-FR"))</dd>
+
+    <dt>Total :</dt>
+    <dd>@Model.Total.ToString("C", new CultureInfo("fr-FR"))</dd>
+
+
+    <dt>Lignes de panier :</dt>
+    <dd>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Produit (Id) :</th>
+                    <th scope="col">Produit (Nom)</th>
+                    <th scope="col">Produit (Prix)</th>
+                    <th scope="col">Produit (Quantité)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Lignes == null || !Model.Lignes.Any())
+                {
+                    <tr>
+                        <td colspan="5" class="text-center text-muted">Aucune ligne dans ce panier pour le moment.</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in @Model.Lignes)
+                    {
+                        <tr>
+                            <td>@item.ProduitId</td>
+                            <td>@item.ProduitNom</td>
+                            <td>@item.PrixUnitaire.ToString("C", new CultureInfo("fr-FR"))</td>
+                            <td>@item.Quantite</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </dd>
+</dl>
+
+<br/>
+<br/>
+
+<a class="btn btn-outline-secondary"
+   asp-controller="Panier" asp-action="Index" asp-route-panierId="@Model.PanierId">
+    Gérer ce panier
+</a>
+
+<br/>
+<br/>
+
+<a asp-controller="Paniers" asp-action="Index">Retour à la liste</a>

@@ -1,0 +1,20 @@
+﻿@model Produit
+
+<dl>
+    <dt>Id :</dt>
+    <dd>@Model.Id</dd>
+
+    <dt>Nom :</dt>
+    <dd>@Model.Nom</dd>
+
+    <dt>Catégorie :</dt>
+    <dd>@Model.Categorie</dd>
+
+    <dt>Prix :</dt>
+    <dd>@Model.Prix.ToString("C", new CultureInfo("fr-FR"))</dd>
+
+    <dt>Stock :</dt>
+    <dd>@Model.Stock</dd>
+</dl>
+
+<a asp-controller="Produits" asp-action="Index">Retour à la liste</a>

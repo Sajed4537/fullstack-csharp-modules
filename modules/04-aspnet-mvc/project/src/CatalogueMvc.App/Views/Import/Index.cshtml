@@ -1,0 +1,52 @@
+﻿@model ImportUploadVm
+
+
+<h1>Import des données</h1>
+<br/>
+
+@if (TempData["message"] != null)
+{
+    <div> <h2>@TempData["message"]</h2> </div>
+}
+
+<form asp-controller="Import" asp-action="Upload" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+    <div class="mb-3">
+        <label for="TypeDonnee" class="form-label">Type de donnée :</label>
+        <select asp-for="TypeDonnee" asp-items="Html.GetEnumSelectList<TypeDonnee>()" class="form-select">
+            <option value="">— Choisissez un type de donnée —</option>
+        </select>
+        <br />
+        <span asp-validation-for="TypeDonnee" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Format" class="form-label">Format :</label>
+        <select asp-for="Format" asp-items="Html.GetEnumSelectList<Format>()" class="form-select">
+            <option value="">— Choisissez un format —</option>
+        </select>
+        <br />
+        <span asp-validation-for="Format" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Choix du fichier :</label>
+        <br/>
+        <input class="form-control" type="file" asp-for="FormFile" accept=".csv,.xml" />
+        <br />
+        <span asp-validation-for="FormFile" class="text-danger"></span>
+    </div>
+
+    <br />
+    <button type="submit" class=" btn btn-primary">Suivant</button>
+
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }}

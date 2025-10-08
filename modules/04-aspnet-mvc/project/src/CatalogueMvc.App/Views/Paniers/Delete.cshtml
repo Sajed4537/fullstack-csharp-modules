@@ -1,0 +1,44 @@
+﻿@model Panier
+
+<form asp-controller="Paniers" asp-action="DeleteConfirmation" method="post" asp-route-id="@Model.Id">
+    @Html.AntiForgeryToken()
+    <dl>
+        <dt>Id :</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Id d'utilisateur :</dt>
+        <dd>@Model.IdUtilisateur</dd>
+
+        <dt>Lignes de panier :</dt>
+        <dd>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Produit (Id) :</th>
+                        <th scope="col">Produit (Nom)</th>
+                        <th scope="col">Produit (Prix)</th>
+                        <th scope="col">Produit (Quantité)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in @Model.Produits)
+                    {
+                        <tr>
+                            <td>@item.ProduitId</td>
+                            <td>@item.Nom</td>
+                            <td>@item.PrixUnitaire.ToString("C", new CultureInfo("fr-FR"))</td>
+                            <td>@item.Quantite</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+    <br />
+    <br />
+    <button type="submit" class=" btn btn-danger">Supprimer</button>
+</form>
+
+<br/>
+
+<a asp-controller="Paniers" asp-action="Index">Retour à la liste</a>

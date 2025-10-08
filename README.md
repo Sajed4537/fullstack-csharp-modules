@@ -17,6 +17,9 @@ Ce repo regroupe **tous les exercices** et **tous les projets** par module.
 - **03 — SOLID & Design Patterns**
   - Exercises : [`modules/03-solid-patterns/exercices`](modules/03-solid-patterns/exercices/)
   - Project   : [`modules/03-solid-patterns/project`](modules/03-solid-patterns/project/)
+- **04 — ASP.NET MVC (E-commerce Platform)**
+  - Exercises : [`modules/04-mvc-ecommerce/exercices`](modules/04-aspnet-mvc/exercices/)
+  - Project   : [`modules/04-mvc-ecommerce/project`](modules/04-aspnet-mvc/project/)
 
 ## Lancer un exercice (Console)
 1. Ouvrir **`Exercises.sln`**.

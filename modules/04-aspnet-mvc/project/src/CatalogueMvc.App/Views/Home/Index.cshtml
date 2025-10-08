@@ -1,0 +1,162 @@
+﻿@{
+    ViewData["Title"] = "Accueil — Demo e-commerce MVC";
+}
+
+<div class="container py-4">
+
+    <div class="text-center mb-4">
+        <h1 class="display-5">Demo e-commerce MVC — Import, CRUD, Panier</h1>
+        <p class="text-muted mb-0">
+            Projet ASP.NET Core MVC de démonstration complet : import CSV/XML, CRUD Produits & Utilisateurs,
+            gestion de Panier (ajout, suppression, livraison avec Strategy, remise Admin avec Decorator).
+        </p>
+    </div>
+
+    <!-- Liens rapides -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <a class="btn btn-primary w-100" asp-controller="Import" asp-action="Index">→ Importer des données</a>
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-outline-primary w-100" asp-controller="Produits" asp-action="Index">→ Produits (CRUD)</a>
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-outline-primary w-100" asp-controller="Utilisateurs" asp-action="Index">→ Utilisateurs (CRUD)</a>
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-outline-primary w-100" asp-controller="Paniers" asp-action="Index">→ Paniers (liste)</a>
+        </div>
+    </div>
+
+    <!-- Bloc 1 : Import -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="h4">1) Importer des données (CSV / XML)</h2>
+            <p>
+                Le module <strong>Import</strong> permet de charger des fichiers CSV ou XML
+                pour alimenter la base de données en mémoire (Produits & Utilisateurs).
+            </p>
+
+            <h5 class="mt-3">Étapes</h5>
+            <ol class="mb-3">
+                <li>Ouvrir <em>Import</em> via le menu ou le bouton ci-dessus.</li>
+                <li>Choisir le <strong>Type de donnée</strong> (Produits ou Utilisateurs) et le <strong>Format</strong> (CSV ou XML).</li>
+                <li>Sélectionner le fichier correspondant.</li>
+                <li>Cliquer sur <em>Suivant</em> → prévisualisation (valeurs lues, erreurs éventuelles, lignes valides).</li>
+                <li>Cliquer sur <em>Confirmer</em> → enregistrement en mémoire.</li>
+            </ol>
+
+            <h5 class="mt-3">📁 Fichiers déjà prêts à l’utilisation</h5>
+            <p>
+                Dans le projet, un dossier <strong>DATA</strong> contient déjà
+                <em>quatre fichiers prêts à importer</em> :
+            </p>
+            <ul>
+                <li><code>produits_A.csv</code></li>
+                <li><code>produits_B.xml</code></li>
+                <li><code>utilisateurs_A.csv</code></li>
+                <li><code>utilisateurs_B.xml</code></li>
+            </ul>
+            <p>
+                Ces fichiers contiennent des jeux de données cohérents et variés,
+                permettant de tester directement l’application sans devoir créer ses propres fichiers.
+            </p>
+
+            <div class="alert alert-secondary mt-3">
+                <strong>Produits — CSV attendu :</strong><br />
+                En-têtes : <code>Nom,Categorie,Prix,Stock</code><br />
+                Exemple :
+<pre class="mb-0"><code>Nom,Categorie,Prix,Stock
+Clavier,Peripherique,49.99,20
+Souris,Peripherique,19.90,50
+</code></pre>
+            </div>
+
+            <div class="alert alert-secondary">
+                <strong>Utilisateurs — CSV attendu :</strong><br />
+                En-têtes : <code>Nom,Prenom,Email,Type</code> (Type ∈ {Client,Administrateur})<br />
+                Exemple :
+<pre class="mb-0"><code>Nom,Prenom,Email,Type
+Durand,Eric,eric.durand@example.com,Client
+Martin,Ana,ana.martin@example.com,Administrateur
+</code></pre>
+            </div>
+
+            <div class="alert alert-secondary">
+                <strong>Produits — XML attendu :</strong>
+<pre class="mb-0"><code>&lt;Produits&gt;
+  &lt;Produit&gt;
+    &lt;Nom&gt;Clavier&lt;/Nom&gt;
+    &lt;Categorie&gt;Peripherique&lt;/Categorie&gt;
+    &lt;Prix&gt;49.99&lt;/Prix&gt;
+    &lt;Stock&gt;20&lt;/Stock&gt;
+  &lt;/Produit&gt;
+&lt;/Produits&gt;
+</code></pre>
+            </div>
+
+            <div class="alert alert-secondary">
+                <strong>Utilisateurs — XML attendu :</strong>
+<pre class="mb-0"><code>&lt;Utilisateurs&gt;
+  &lt;Utilisateur&gt;
+    &lt;Nom&gt;Durand&lt;/Nom&gt;
+    &lt;Prenom&gt;Eric&lt;/Prenom&gt;
+    &lt;Email&gt;eric.durand@example.com&lt;/Email&gt;
+    &lt;Type&gt;Client&lt;/Type&gt;
+  &lt;/Utilisateur&gt;
+&lt;/Utilisateurs&gt;
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bloc 2 : CRUD -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="h4">2) Éditer les données (CRUD)</h2>
+            <p>
+                Les écrans <strong>Produits</strong> et <strong>Utilisateurs</strong> permettent
+                d’afficher, créer, modifier ou supprimer les éléments importés.
+                La validation des formulaires est assurée côté serveur via <code>DataAnnotations</code>.
+            </p>
+            <a class="btn btn-outline-secondary me-2" asp-controller="Produits" asp-action="Index">Ouvrir Produits</a>
+            <a class="btn btn-outline-secondary" asp-controller="Utilisateurs" asp-action="Index">Ouvrir Utilisateurs</a>
+        </div>
+    </div>
+
+    <!-- Bloc 3 : Panier -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="h4">3) Panier — Strategy & Decorator</h2>
+            <p>
+                Le module <strong>Paniers</strong> illustre deux design patterns :
+                <strong>Strategy</strong> (modes de livraison Standard/Express)
+                et <strong>Decorator</strong> (remise automatique pour Administrateur).
+            </p>
+
+            <h5 class="mt-3">Fonctionnement</h5>
+            <ol>
+                <li>Créer un panier pour un utilisateur.</li>
+                <li>Ajouter/retirer des produits (quantité libre).</li>
+                <li>Choisir le type de livraison : Standard (+5 €) ou Express (+12 €).</li>
+                <li>Voir le total mis à jour dynamiquement.</li>
+                <li>Si l’utilisateur est <strong>Administrateur</strong> → remise de 20 % appliquée.</li>
+            </ol>
+
+            <a class="btn btn-outline-secondary" asp-controller="Paniers" asp-action="Index">Accéder aux paniers</a>
+        </div>
+    </div>
+
+    <!-- Bloc 4 : Tech -->
+    <div class="card">
+        <div class="card-body">
+            <h2 class="h4">4) Points techniques</h2>
+            <ul class="mb-0">
+                <li><strong>Import :</strong> Parsing CSV/XML, validation, preview, sauvegarde session, confirmation.</li>
+                <li><strong>CRUD :</strong> MVC Controllers, Tag Helpers, validations serveur.</li>
+                <li><strong>Panier :</strong> InMemory + Strategy (livraison) + Decorator (remise admin).</li>
+                <li><strong>UI :</strong> Bootstrap, messages flash (TempData).</li>
+            </ul>
+        </div>
+    </div>
+</div>

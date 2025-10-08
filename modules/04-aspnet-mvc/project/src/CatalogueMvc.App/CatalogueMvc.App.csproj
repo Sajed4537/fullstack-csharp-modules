@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DATA\produits.csv" />
+    <None Remove="DATA\produits_A.csv" />
+    <None Remove="DATA\produits_B.xml" />
+    <None Remove="DATA\utilisateurs.xml" />
+    <None Remove="DATA\utilisateurs_A.csv" />
+    <None Remove="DATA\utilisateurs_B.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DATA\produits_A.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DATA\produits_B.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DATA\utilisateurs_A.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DATA\utilisateurs_B.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

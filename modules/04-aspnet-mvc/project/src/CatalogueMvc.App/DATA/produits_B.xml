@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Produits>
+  <Produit>
+    <Nom>Riz basmati</Nom>
+    <Categorie>Alimentation</Categorie>
+    <Prix>2.30</Prix>
+    <Stock>120</Stock>
+  </Produit>
+  <Produit>
+    <Nom>Gel douche</Nom>
+    <Categorie>HygieneEtBeaute</Categorie>
+    <Prix>3.20</Prix>
+    <Stock>55</Stock>
+  </Produit>
+  <Produit>
+    <Nom>Éponge végétale</Nom>
+    <Categorie>EntretienMaison</Categorie>
+    <Prix>1.50</Prix>
+    <Stock>90</Stock>
+  </Produit>
+  <Produit>
+    <Nom>Lampe LED murale</Nom>
+    <Categorie>EquipementMaison</Categorie>
+    <Prix>22.90</Prix>
+    <Stock>18</Stock>
+  </Produit>
+  <Produit>
+    <Nom>Jean slim</Nom>
+    <Categorie>TextileEtHabillement</Categorie>
+    <Prix>34.00</Prix>
+    <Stock>35</Stock>
+  </Produit>
+  <Produit>
+    <Nom>Poussette canne</Nom>
+    <Categorie>EnfantsEtBebes</Categorie>
+    <Prix>59.00</Prix>
+    <Stock>10</Stock>
+  </Produit>
+  <Produit>
+    <Nom>Enceinte Bluetooth</Nom>
+    <Categorie>MultimediaEtLoisirs</Categorie>
+    <Prix>29.90</Prix>
+    <Stock>22</Stock>
+  </Produit>
+  <Produit>
+    <Nom>Friandises chien</Nom>
+    <Categorie>Animalerie</Categorie>
+    <Prix>4.10</Prix>
+    <Stock>85</Stock>
+  </Produit>
+</Produits>

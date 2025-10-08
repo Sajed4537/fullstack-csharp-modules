@@ -1,0 +1,35 @@
+﻿@model FormsAndDataAnnotations.App.ViewModels.ProduitCreateVm
+
+<h1>Créer un produit</h1>
+
+<form asp-action="Create" asp-controller="Produit" method="post">
+    @Html.AntiForgeryToken()
+
+    <label for="Nom">Nom</label>
+    <input type="text" id="Nom" name="Nom" value="@Model?.Nom" />
+    <br />
+    <span asp-validation-for="Nom" class="text-danger"></span>
+
+    <br />
+    <br />
+
+    <label for="Categorie">Catégorie</label>
+    <input type="text" id="Categorie" name="Categorie" value="@Model?.Categorie" />
+    <br />
+    <span asp-validation-for="Categorie" class="text-danger"></span>
+
+    <br />
+    <br />
+
+    <label for="Prix">Prix</label>
+    <input type="number" id="Prix" name="Prix" value="@Model?.Prix" step="0.01" />
+    <br />
+    <span asp-validation-for="Prix" class="text-danger"></span>
+
+    <button type="submit">Créer</button>
+</form>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

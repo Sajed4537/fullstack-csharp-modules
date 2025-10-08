@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Utilisateurs>
+  <Utilisateur>
+    <Nom>Garcia</Nom>
+    <Prenom>Lucie</Prenom>
+    <Email>lucie.garcia@example.com</Email>
+    <Type>Client</Type>
+  </Utilisateur>
+  <Utilisateur>
+    <Nom>Fontaine</Nom>
+    <Prenom>Maxime</Prenom>
+    <Email>maxime.fontaine@example.com</Email>
+    <Type>Administrateur</Type>
+  </Utilisateur>
+  <Utilisateur>
+    <Nom>Andre</Nom>
+    <Prenom>Sarah</Prenom>
+    <Email>sarah.andre@example.com</Email>
+    <Type>Client</Type>
+  </Utilisateur>
+</Utilisateurs>

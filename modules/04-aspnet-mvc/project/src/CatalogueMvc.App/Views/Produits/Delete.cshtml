@@ -1,0 +1,27 @@
+﻿@model Produit
+
+<form asp-controller="Produits" asp-action="DeleteConfirmation" method="post" asp-route-id="@Model.Id">
+    @Html.AntiForgeryToken()
+    <dl>
+        <dt>Id :</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Nom :</dt>
+        <dd>@Model.Nom</dd>
+
+        <dt>Catégorie :</dt>
+        <dd>@Model.Categorie</dd>
+
+        <dt>Prix :</dt>
+        <dd>@Model.Prix.ToString("C", new CultureInfo("fr-FR"))</dd>
+
+        <dt>Stock :</dt>
+        <dd>@Model.Stock</dd>
+    </dl>
+
+    <button type="submit" class=" btn btn-danger">Supprimer</button>
+</form>
+
+<br/>
+
+<a asp-controller="Produits" asp-action="Index">Retour à la liste</a>

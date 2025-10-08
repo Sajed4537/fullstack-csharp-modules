@@ -1,0 +1,37 @@
+﻿@model ProductFormVm
+
+<h1>Créer un produit</h1>
+
+<form asp-controller="Product" asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+    <div class="mb-3">
+        <label for="Name" class="form-label">Nom :</label>
+        <input type="text" id="Name" asp-for="Name" class="form-control" />
+        <br />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Categorie" class="form-label">Catégorie :</label>
+        <select asp-for="Categorie" asp-items="Html.GetEnumSelectList<Categorie>()" class="form-select">
+            <option value="">— Choisissez une catégorie —</option>
+        </select>
+        <br />
+        <span asp-validation-for="Categorie" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Prix" class="form-label">Prix :</label>
+        <input type="number" id="Prix" asp-for="Prix" step="0.01" class="form-control" />
+        <br />
+        <span asp-validation-for="Prix" class="text-danger"></span>
+    </div>
+    <br />
+    <button type="submit" class=" btn btn-primary">Créer</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

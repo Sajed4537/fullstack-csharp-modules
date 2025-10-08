@@ -1,0 +1,13 @@
+﻿<h1>Liste produits</h1>
+
+<form method="get" asp-controller="Produit" asp-action="Index">
+    <input type="text" name="q" placeholder="Rechercher..." />
+    <button type="submit">Rechercher</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Context.Request.Query["q"]))
+{
+    <p>Recherche : @Context.Request.Query["q"]</p>
+}
+
+<a asp-controller="Produit" asp-action="Create">Créer un produit</a>

@@ -1,0 +1,9 @@
+Authors(AuthorID, FullName, Nationality)
+
+↓
+
+Books(BookID, Title, Genre, AuthorID, Available)
+
+↓
+
+Loans(LoanID, BookID, Borrower, LoanDate, ReturnDate)

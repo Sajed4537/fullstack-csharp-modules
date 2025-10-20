@@ -1,0 +1,19 @@
+CREATE TABLE Categories(
+CategoryID INT PRIMARY KEY IDENTITY(1, 1), 
+Name NVARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Products(
+ProductID INT PRIMARY KEY IDENTITY(1, 1),
+Name NVARCHAR(100) NOT NULL,
+Price DECIMAL(10,2),
+CategoryID INT,
+FOREIGN KEY(CategoryID) REFERENCES Categories(CategoryID)
+);
+
+CREATE TABLE Stock(
+StockID INT PRIMARY KEY IDENTITY(1, 1), 
+Quantity INT, 
+ProductID INT,
+FOREIGN KEY(ProductID) REFERENCES Products(ProductID)
+);

@@ -1,0 +1,5 @@
+Categories (CategoryID, Name)
+     ↓
+Products (ProductID, Name, Price, CategoryID)
+     ↓
+Stock (StockID, ProductID, Quantity)

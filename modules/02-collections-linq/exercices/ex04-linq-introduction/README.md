@@ -1,6 +1,6 @@
 # ex04 — LINQ Introduction
 
-**Objectif**  
+## Objective
 Introduire les opérations LINQ de base sur une `List<Produit>` :
 - **Filtrer** (`Where`) selon un prédicat (prix > 10).
 - **Projeter** (`Select`) pour extraire les noms.
@@ -8,10 +8,10 @@ Introduire les opérations LINQ de base sur une `List<Produit>` :
 - **Paginer** (`Take`, `Skip`) pour récupérer un sous-ensemble.
 - **Dédupliquer** (`DistinctBy`) sur une clé (nom).
 
-**Run**  
+## Run
 Ouvrir `Exercises.sln`, définir **LinqIntroduction.App** comme projet de démarrage, puis lancer avec **F5**.
 
-**Compétences démontrées**  
+## Skills
 - Modélisation d’un type `Produit` (Id, Name, Categorie, Prix) et méthode d’affichage console.
 - Chaînage d’opérateurs LINQ : `Where` → `Select` → `OrderBy`/`OrderByDescending` → `Take`/`Skip`.
 - Utilisation de `DistinctBy` pour **éliminer les doublons** d’après une clé.

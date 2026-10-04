@@ -1,15 +1,15 @@
 # ex04 — Interfaces & Abstract Classes
 
-**Objectif**  
+## Objective
 Comparer et combiner **classes abstraites** et **interfaces** : définir un contrat commun avec une
 classe abstraite (`Personne`) et un contrat transverse avec une interface (`ITravailleur`), puis
 spécialiser le comportement dans `Etudiant` et `Professeur` via `override` et implémentation
 de `Travailler()`.
 
-**Run**  
+## Run
 Ouvrir `Exercises.sln`, définir **InterfacesAndAbstractClasses.App** comme projet de démarrage, puis lancer avec **F5**.
 
-**Compétences démontrées**  
+## Skills
 - Déclaration d’une **classe abstraite** (membres concrets + méthode `abstract Presenter()`).
 - Définition et **implémentation d’interface** (`ITravailleur.Travailler()`).
 - **Spécialisation** dans les dérivés (`override Presenter()`), tout en partageant l’API commune.

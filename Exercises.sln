@@ -57,11 +57,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelsAndServerValidati
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-SQL-EFCore", "05-SQL-EFCore", "{F71E9289-F92E-43CD-8902-EA80C94647E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModeling.App", "modules\05-sql-efcore\exercices\ex01-data-modeling-products-categories-stock\src\DataModeling\DataModeling.App\DataModeling.App.csproj", "{4BB86D1B-8B5B-5AF1-92E0-E69DA1A7243A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModeling.App", "modules\05-sql-efcore\exercices\ex01-data-modeling-products-categories-stock\src\DataModeling.App\DataModeling.App.csproj", "{4BB86D1B-8B5B-5AF1-92E0-E69DA1A7243A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreMigrationsUpdateDatabase.App", "modules\05-sql-efcore\exercices\ex02-efcore-migrations-update-database\src\EfCoreMigrationsUpdateDatabase\EfCoreMigrationsUpdateDatabase.App\EfCoreMigrationsUpdateDatabase.App.csproj", "{2AB48D68-31B2-BBAF-61CB-157D2181FFB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreMigrationsUpdateDatabase.App", "modules\05-sql-efcore\exercices\ex02-efcore-migrations-update-database\src\EfCoreMigrationsUpdateDatabase.App\EfCoreMigrationsUpdateDatabase.App.csproj", "{2AB48D68-31B2-BBAF-61CB-157D2181FFB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreLinqQueries.App", "modules\05-sql-efcore\exercices\ex03-efcore-linq-queries\src\EfCoreLinqQueries.App\EfCoreLinqQueries.App\EfCoreLinqQueries.App.csproj", "{AF61DF29-12D3-AC44-F474-129133F9C242}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreLinqQueries.App", "modules\05-sql-efcore\exercices\ex03-efcore-linq-queries\src\EfCoreLinqQueries.App\EfCoreLinqQueries.App.csproj", "{AF61DF29-12D3-AC44-F474-129133F9C242}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

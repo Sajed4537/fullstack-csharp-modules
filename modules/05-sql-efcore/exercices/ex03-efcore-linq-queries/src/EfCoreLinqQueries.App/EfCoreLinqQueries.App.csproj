@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\ex02-efcore-migrations-update-database\src\EfCoreMigrationsUpdateDatabase\EfCoreMigrationsUpdateDatabase.App\EfCoreMigrationsUpdateDatabase.App.csproj" />
+    <ProjectReference Include="..\..\..\ex02-efcore-migrations-update-database\src\EfCoreMigrationsUpdateDatabase.App\EfCoreMigrationsUpdateDatabase.App.csproj" />
   </ItemGroup>
 
 </Project>

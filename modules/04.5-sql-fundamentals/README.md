@@ -1,14 +1,15 @@
 # Module 04.5 — SQL Fundamentals & SQL Server
 
 ## Summary
-Introduction aux bases de données relationnelles et à SQL Server : tables, clés primaires/étrangères, opérations CRUD, relations (JOINS), contraintes et notions de performance (index, normalisation).
+Introduction aux bases de données relationnelles et à SQL Server : tables, clés primaires/étrangères, opérations CRUD, relations (`JOIN`), contraintes et notions de performance (index, normalisation).
 
 ## Exercises
-- ex01 — Database Structure Basics  
-- ex02 — Create Tables  
-- ex03 — CRUD Operations  
-- ex04 — Joins & Relations  
-- ex05 — Indexes & Optimization  
+- `ex01-db-structure-basics` — Database Structure Basics
+- `ex02-create-tables` — Create Tables
+- `ex03-crud-operations` — CRUD Operations
+- `ex04-joins-and-relations` — Joins & Relations
+- `ex05-indexes-and-optimization` — Indexes & Optimization
 
 ## Project
-- SQL Project : `project/catalogue-sql/`
+- Library Management System : [`project/`](./project/)
+- Scripts : `project/src/`

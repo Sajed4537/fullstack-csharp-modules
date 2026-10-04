@@ -1,13 +1,16 @@
 # Module 02 — Collections & LINQ
 
-Objectifs  List,Dictionary,HashSet, égalité, LINQ (requêtes, groupements, agrégations).
+## Summary
+Collections .NET (`List`, `Dictionary`, `HashSet`), égalité (`Equals` / `GetHashCode`) et LINQ (filtres, projections, tris, groupements, agrégations).
 
 ## Exercises
-- `ex01-list-manipulation`
-- `ex02-dictionary-basics`
-- `ex03-hashset-and-equality`
-- `ex04-linq-introduction`
-- `ex05-linq-practice`
+- `ex01-list-manipulation` — List Manipulation
+- `ex02-dictionary-basics` — Dictionary Basics
+- `ex03-hashset-and-equality` — HashSet & Equality
+- `ex04-linq-introduction` — LINQ Introduction
+- `ex05-linq-practice` — LINQ Practice
 
 ## Project
-Voir [`project`](.project) pour la fiche et la solution du projet du module.
+- Movie Catalog : [`project/`](./project/)
+- Solution : `project/MovieCatalog.sln`
+- App : `project/src/MovieCatalog.App/`

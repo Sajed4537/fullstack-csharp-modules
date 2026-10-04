@@ -3,7 +3,7 @@
 ## Summary
 Application console de **gestion de bibliothèque** pour pratiquer la POO en C#.
 
-**Objectifs**
+## Features
 - Modéliser les entités du domaine :
   `Bibliotheque`, `Livre`, `Utilisateur` (spécialisé en `Etudiant` et `Professeur`), et l’interface `IEmprunteur` (contrat des emprunteurs).
 - Implémenter les règles métier d’emprunt/retour et la validation via exceptions : `LivreIndisponibleException`, `LivreInexistantException`, `LivreNonEmprunteException`.
@@ -11,7 +11,7 @@ Application console de **gestion de bibliothèque** pour pratiquer la POO en C#.
 - Organiser le code en dossiers (`Domain`, `Interface`, `Exceptions`) pour une lecture claire.
 
 ## Stack
-C#, .NET 8 (Console)
+C#, .NET 9 (Console)
 
 ## How to run
 - Ouvrir la solution : [`OopFundamentals.sln`](./OopFundamentals.sln)

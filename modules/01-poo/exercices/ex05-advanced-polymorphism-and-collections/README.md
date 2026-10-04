@@ -1,18 +1,17 @@
 # ex05 — Advanced Polymorphism & Collections
 
-**Objectif**  
+## Objective
 Combiner **polymorphisme** et **collections génériques** en modélisant une hiérarchie `Animal`
 (classe abstraite avec `Name`, `Age`, `Presenter()`, et `Crier()` abstraite) et des dérivés
-(`Chien`, `Chat`, `Oiseau`).  
+(`Chien`, `Chat`, `Oiseau`).
 Introduire une **interface** transversale `IVolant` implémentée par `Oiseau`, puis itérer une
 `List<Animal>` pour invoquer dynamiquement `Presenter()` / `Crier()` et, lorsque disponible,
 `Voler()` via un test de type (`is`).
 
-**Run**  
-Ouvrir `Exercises.sln`, définir **AdvancedPolymorphismAndCollections.App**
-comme projet de démarrage, puis lancer avec **F5**.
+## Run
+Ouvrir `Exercises.sln`, définir **AdvancedPolymorphismAndCollections.App** comme projet de démarrage, puis lancer avec **F5**.
 
-**Compétences démontrées**  
+## Skills
 - **Classe abstraite** + **override** : `Animal` déclare `Crier()`, les dérivés fournissent
   l’implémentation (aboiement/miaou/cui-cui).
 - **Interface** et **test de type** : `IVolant` + pattern matching `is` pour appeler `Voler()`

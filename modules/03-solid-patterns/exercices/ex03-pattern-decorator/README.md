@@ -1,6 +1,6 @@
 # ex03 — Decorator Pattern (Cart Surcharges)
 
-**Objectif**  
+## Objective
 Appliquer le **pattern Decorator** pour enrichir le calcul d’un panier par des
 **surcharges optionnelles** sans modifier le calculateur de base, et combiner cela
 avec des **stratégies de remise** interchangeables.
@@ -19,11 +19,10 @@ avec des **stratégies de remise** interchangeables.
   - `RemisePalier` (paliers 100→5, 200→15, 300→30),
   - `RemiseCodePromo` (codes → montant fixe ou pourcentage, ex. `PROMO10`, `NOEL20`).
 
-**Run**  
-Ouvrir `Exercises.sln`, définir **PatternDecorator.App** comme projet de démarrage,
-puis lancer avec **F5**.
+## Run
+Ouvrir `Exercises.sln`, définir **PatternDecorator.App** comme projet de démarrage, puis lancer avec **F5**.
 
-**Compétences démontrées**  
+## Skills
 - **Decorator** : séparation nette entre **calcul de base** et **surcharges**,
   possibilité de **chaîner** plusieurs décorateurs sans toucher au cœur.
 - **Strategy** : calcul de remise **découplé** via `IRemiseStrategy` et ses implémentations.
@@ -35,4 +34,3 @@ puis lancer avec **F5**.
   - `Produit` (Id, Nom)
   - `LignePanier` (validation : `Quantite` > 0, `PrixUnitaire` > 0)
   - `Panier` (liste de lignes, `GetTotalPrix()`, `GetTotalAvecRemise()`)
-

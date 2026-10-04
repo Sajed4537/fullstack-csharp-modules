@@ -1,16 +1,15 @@
 # ex02 — Strategy Pattern (Discount Policies)
 
-**Objectif**  
+## Objective
 Mettre en œuvre le **pattern Strategy** pour appliquer des politiques de remise
 interchangeables sur un panier. Le calcul du total est **découplé** de l’algorithme
 de remise via l’interface `IRemiseStrategy`, ce qui permet de **brancher** la
 stratégie désirée au moment de l’exécution.
 
-**Run**  
-Ouvrir `Exercises.sln`, définir **PatternStrategy.App** comme projet de démarrage,
-puis lancer avec **F5**.
+## Run
+Ouvrir `Exercises.sln`, définir **PatternStrategy.App** comme projet de démarrage, puis lancer avec **F5**.
 
-**Compétences démontrées**  
+## Skills
 - **Strategy** : contrat `IRemiseStrategy.CalculRemise(decimal)` et multiples
   implémentations plug-and-play :
   - `PasDeRemise` (0),

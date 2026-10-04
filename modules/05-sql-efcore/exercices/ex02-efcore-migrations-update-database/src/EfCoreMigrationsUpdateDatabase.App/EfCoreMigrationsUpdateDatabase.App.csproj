@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\ex01-data-modeling-products-categories-stock\src\DataModeling\DataModeling.App\DataModeling.App.csproj" />
+    <ProjectReference Include="..\..\..\ex01-data-modeling-products-categories-stock\src\DataModeling.App\DataModeling.App.csproj" />
   </ItemGroup>
 
 </Project>

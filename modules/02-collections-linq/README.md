@@ -10,4 +10,4 @@ Objectifs  List,Dictionary,HashSet, égalité, LINQ (requêtes, groupements, agr
 - `ex05-linq-practice`
 
 ## Project
-Voir [`project`](.project) pour la fiche et la solution du projet du module.
+Voir [`project`](./project) pour la fiche et la solution du projet du module.

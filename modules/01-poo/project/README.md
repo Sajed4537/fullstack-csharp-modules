@@ -11,7 +11,7 @@ Application console de **gestion de bibliothèque** pour pratiquer la POO en C#.
 - Organiser le code en dossiers (`Domain`, `Interface`, `Exceptions`) pour une lecture claire.
 
 ## Stack
-C#, .NET 8 (Console)
+C#, .NET 9 (Console)
 
 ## How to run
 - Ouvrir la solution : [`OopFundamentals.sln`](./OopFundamentals.sln)

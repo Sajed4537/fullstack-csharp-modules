@@ -38,8 +38,8 @@ L’application permet d’importer des données (produits / utilisateurs), de g
 C#, .NET 8 (ASP.NET Core MVC), LINQ, Bootstrap 5
 
 ## How to run
-- Ouvrir la solution : `EcommerceMvc.sln`
-- Définir *EcommerceMvc.App* comme projet de démarrage
+- Ouvrir la solution : `CatalogueMvc.sln`
+- Définir *CatalogueMvc.App* comme projet de démarrage
 - Vérifier les fichiers d’import dans le dossier `/DATA`
 - Lancer avec *F5* (ou `dotnet run`)
 - Aller sur :
@@ -62,5 +62,5 @@ C#, .NET 8 (ASP.NET Core MVC), LINQ, Bootstrap 5
 5. *Message de confirmation* après import ou opération CRUD (via TempData).
 
 ## Links
-- Source code : `modules/04-mvc-ecommerce/project/src/`
-- Data samples : `modules/04-mvc-ecommerce/project/DATA/`
+- Source code : `modules/04-aspnet-mvc/project/src/`
+- Data samples : `modules/04-aspnet-mvc/project/DATA/`

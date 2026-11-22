@@ -27,7 +27,7 @@ le total (remises + livraison) de façon **extensible** et **découplée**.
   `ILivraisonStrategy` avec deux stratégies : `StandardLivraison` (+5) et `ExpressLivraison` (+12).
 
 ## Stack
-C#, .NET 8 (Console), LINQ
+C#, .NET 9 (Console), LINQ
 
 ## How to run
 - Ouvrir la solution : `EcommerceCart.sln`

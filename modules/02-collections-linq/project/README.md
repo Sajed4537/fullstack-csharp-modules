@@ -12,7 +12,7 @@ Application console de **catalogue de films** pour pratiquer Collections & LINQ.
 - **Pagination** simple avec `Skip`/`Take`.
 
 ## Stack
-C#, .NET 8 (Console), LINQ
+C#, .NET 9 (Console), LINQ
 
 ## How to run
 - Ouvrir : [`MovieCatalog.sln`](./MovieCatalog.sln)

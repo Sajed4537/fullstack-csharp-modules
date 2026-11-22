@@ -4,7 +4,7 @@
 Configurer **Entity Framework Core** pour générer automatiquement une base de données à partir du modèle défini dans l’exercice précédent.  
 Créer un `DbContext`, exécuter une migration, et vérifier la création réelle des tables dans SQL Server.
 
-- Création d’un projet console `.NET 8` : `EfCoreMigrationsUpdateDatabase.App`  
+- Création d’un projet console `.NET 9` : `EfCoreMigrationsUpdateDatabase.App`  
 - Installation des packages :  
   - `Microsoft.EntityFrameworkCore`  
   - `Microsoft.EntityFrameworkCore.SqlServer`  

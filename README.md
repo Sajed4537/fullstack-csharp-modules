@@ -18,11 +18,14 @@ Ce repo regroupe **tous les exercices** et **tous les projets** par module.
   - Exercises : [`modules/03-solid-patterns/exercices`](modules/03-solid-patterns/exercices/)
   - Project   : [`modules/03-solid-patterns/project`](modules/03-solid-patterns/project/)
 - **04 — ASP.NET MVC (E-commerce Platform)**
-  - Exercises : [`modules/04-mvc-ecommerce/exercices`](modules/04-aspnet-mvc/exercices/)
-  - Project   : [`modules/04-mvc-ecommerce/project`](modules/04-aspnet-mvc/project/)
+  - Exercises : [`modules/04-aspnet-mvc/exercices`](modules/04-aspnet-mvc/exercices/)
+  - Project   : [`modules/04-aspnet-mvc/project`](modules/04-aspnet-mvc/project/)
 - **04.5 — SQL Fundamentals (Library Management System)**
-  - Exercises : [`modules/04.5-sql-fundamentals/exercises`](modules/04.5-sql-fundamentals/exercises/)
+  - Exercises : [`modules/04.5-sql-fundamentals/exercices`](modules/04.5-sql-fundamentals/exercices/)
   - Project   : [`modules/04.5-sql-fundamentals/project`](modules/04.5-sql-fundamentals/project/)
+- **05 — SQL & Entity Framework Core (Catalogue MVC EF Core)**
+  - Exercises : [`modules/05-sql-efcore/exercices`](modules/05-sql-efcore/exercices/)
+  - Project   : [`modules/05-sql-efcore/project`](modules/05-sql-efcore/project/)
 
 ## Lancer un exercice (Console)
 1. Ouvrir **`Exercises.sln`**.
@@ -35,5 +38,5 @@ Ce repo regroupe **tous les exercices** et **tous les projets** par module.
 3. **F5** (ou `dotnet run`).
 
 ## Tech / outils
-C#, .NET 8, ASP.NET Core MVC, SQL Server, SSMS, LINQ, Visual Studio 2022, Git, GitHub...
+C#, .NET 9, ASP.NET Core MVC, SQL Server, SSMS, LINQ, Visual Studio 2022, Git, GitHub...
 

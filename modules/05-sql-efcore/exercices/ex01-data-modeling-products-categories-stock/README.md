@@ -4,7 +4,7 @@
 Modéliser les entités principales du domaine d’un petit catalogue produit avant la mise en place d’Entity Framework Core.  
 Définir les classes `Category`, `Product` et `Stock` avec leurs propriétés et relations.
 
-- Création d’un projet console `.NET 8` : `DataModelingProductsCategoriesStock.App`
+- Création d’un projet console `.NET 9` : `DataModelingProductsCategoriesStock.App`
 - Ajout d’un dossier `Models/`
 - Création des entités :
   - `Category` : identifiant, nom, liste de produits
@@ -18,7 +18,7 @@ Définir les classes `Category`, `Product` et `Stock` avec leurs propriétés et
 
 **Étapes**
 
-1. Créer le projet `DataModelingProductsCategoriesStock.App` (application console .NET 8).
+1. Créer le projet `DataModelingProductsCategoriesStock.App` (application console .NET 9).
 2. Ajouter un dossier `Models/`.
 3. Créer les classes suivantes :
    - `Category.cs`

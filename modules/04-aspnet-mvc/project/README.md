@@ -35,7 +35,7 @@ L’application permet d’importer des données (produits / utilisateurs), de g
   - *Services / Repositories* (métier et persistance)
 
 ## Stack
-C#, .NET 8 (ASP.NET Core MVC), LINQ, Bootstrap 5
+C#, .NET 9 (ASP.NET Core MVC), LINQ, Bootstrap 5
 
 ## How to run
 - Ouvrir la solution : `CatalogueMvc.sln`

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataModeling.App.Models
+namespace DataModelingProductsCategoriesStock.App.Models
 {
     public class Stock
     {

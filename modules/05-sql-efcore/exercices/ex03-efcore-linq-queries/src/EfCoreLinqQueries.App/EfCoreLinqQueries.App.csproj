@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\ex02-efcore-migrations-update-database\src\EfCoreMigrationsUpdateDatabase\EfCoreMigrationsUpdateDatabase.App\EfCoreMigrationsUpdateDatabase.App.csproj" />
-  </ItemGroup>
-
 </Project>

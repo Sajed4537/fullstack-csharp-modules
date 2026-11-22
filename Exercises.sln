@@ -57,11 +57,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelsAndServerValidati
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-SQL-EFCore", "05-SQL-EFCore", "{F71E9289-F92E-43CD-8902-EA80C94647E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModeling.App", "modules\05-sql-efcore\exercices\ex01-data-modeling-products-categories-stock\src\DataModeling\DataModeling.App\DataModeling.App.csproj", "{4BB86D1B-8B5B-5AF1-92E0-E69DA1A7243A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreMigrationsUpdateDatabase.App", "modules\05-sql-efcore\exercices\ex02-efcore-migrations-update-database\src\EfCoreMigrationsUpdateDatabase.App\EfCoreMigrationsUpdateDatabase.App.csproj", "{86E12157-3A3A-78EF-FC52-B8CC3FC68C48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreMigrationsUpdateDatabase.App", "modules\05-sql-efcore\exercices\ex02-efcore-migrations-update-database\src\EfCoreMigrationsUpdateDatabase\EfCoreMigrationsUpdateDatabase.App\EfCoreMigrationsUpdateDatabase.App.csproj", "{2AB48D68-31B2-BBAF-61CB-157D2181FFB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreLinqQueries.App", "modules\05-sql-efcore\exercices\ex03-efcore-linq-queries\src\EfCoreLinqQueries.App\EfCoreLinqQueries.App.csproj", "{7CEA44B2-44CD-A55E-A1D1-D64CC45F3F3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCoreLinqQueries.App", "modules\05-sql-efcore\exercices\ex03-efcore-linq-queries\src\EfCoreLinqQueries.App\EfCoreLinqQueries.App\EfCoreLinqQueries.App.csproj", "{AF61DF29-12D3-AC44-F474-129133F9C242}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModelingProductsCategoriesStock.App", "modules\05-sql-efcore\exercices\ex01-data-modeling-products-categories-stock\src\DataModelingProductsCategoriesStock.App\DataModelingProductsCategoriesStock.App.csproj", "{38B5E89A-0AB2-86F9-6412-1394A2F4E7B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,18 +157,18 @@ Global
 		{BDD5CF04-F389-408A-8119-A4D7CC62C718}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDD5CF04-F389-408A-8119-A4D7CC62C718}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDD5CF04-F389-408A-8119-A4D7CC62C718}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4BB86D1B-8B5B-5AF1-92E0-E69DA1A7243A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BB86D1B-8B5B-5AF1-92E0-E69DA1A7243A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BB86D1B-8B5B-5AF1-92E0-E69DA1A7243A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BB86D1B-8B5B-5AF1-92E0-E69DA1A7243A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AB48D68-31B2-BBAF-61CB-157D2181FFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AB48D68-31B2-BBAF-61CB-157D2181FFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AB48D68-31B2-BBAF-61CB-157D2181FFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AB48D68-31B2-BBAF-61CB-157D2181FFB0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF61DF29-12D3-AC44-F474-129133F9C242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF61DF29-12D3-AC44-F474-129133F9C242}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF61DF29-12D3-AC44-F474-129133F9C242}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF61DF29-12D3-AC44-F474-129133F9C242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E12157-3A3A-78EF-FC52-B8CC3FC68C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E12157-3A3A-78EF-FC52-B8CC3FC68C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E12157-3A3A-78EF-FC52-B8CC3FC68C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E12157-3A3A-78EF-FC52-B8CC3FC68C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEA44B2-44CD-A55E-A1D1-D64CC45F3F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEA44B2-44CD-A55E-A1D1-D64CC45F3F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEA44B2-44CD-A55E-A1D1-D64CC45F3F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEA44B2-44CD-A55E-A1D1-D64CC45F3F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B5E89A-0AB2-86F9-6412-1394A2F4E7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B5E89A-0AB2-86F9-6412-1394A2F4E7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B5E89A-0AB2-86F9-6412-1394A2F4E7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B5E89A-0AB2-86F9-6412-1394A2F4E7B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -196,9 +196,9 @@ Global
 		{9ABDA4F1-E2D2-486A-A096-1F97CE1B0432} = {60A8355F-64F5-48F6-B879-2C33F075ED44}
 		{CBC3C373-6EE2-4F89-CBA8-20B81D2A5F93} = {60A8355F-64F5-48F6-B879-2C33F075ED44}
 		{BDD5CF04-F389-408A-8119-A4D7CC62C718} = {60A8355F-64F5-48F6-B879-2C33F075ED44}
-		{4BB86D1B-8B5B-5AF1-92E0-E69DA1A7243A} = {F71E9289-F92E-43CD-8902-EA80C94647E2}
-		{2AB48D68-31B2-BBAF-61CB-157D2181FFB0} = {F71E9289-F92E-43CD-8902-EA80C94647E2}
-		{AF61DF29-12D3-AC44-F474-129133F9C242} = {F71E9289-F92E-43CD-8902-EA80C94647E2}
+		{86E12157-3A3A-78EF-FC52-B8CC3FC68C48} = {F71E9289-F92E-43CD-8902-EA80C94647E2}
+		{7CEA44B2-44CD-A55E-A1D1-D64CC45F3F3C} = {F71E9289-F92E-43CD-8902-EA80C94647E2}
+		{38B5E89A-0AB2-86F9-6412-1394A2F4E7B6} = {F71E9289-F92E-43CD-8902-EA80C94647E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {44045F05-19A6-439A-9A78-704CD70A0E58}
